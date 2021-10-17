@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>62015005_2</title>
+</head>
+<body>
+    <H2>My First JavaScript</H2>
+    <p id="date"></p><!--62015005-->
+    <button id="time" onclick="displayDate()">Click me to display Date and Time</button>
+
+    <script>
+        const y = ["white", "Black", "Yellow", "Green", "DarkBlue", "DarkSlateBlue"];
+        const z = ["DarkRed", "DarkGreen", "MediumBlue", "Pink", "YellowGreen", "Aqua"];
+        var c = -1;
+        function displayDate() {
+            c = c+1
+            document.getElementById("time").innerHTML = Date();
+            document.getElementById("time").style.color = y[c];
+            document.getElementById("time").style.backgroundColor = z[c];
+            if (c==6)
+                c=-1;
+	}   
+    </script>
+</body>
+</html>
